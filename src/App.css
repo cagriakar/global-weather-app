@@ -1,38 +1,93 @@
-.App {
+* {
+  box-sizing: border-box;
   text-align: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #f5d9b1;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: #f5d9b1;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  color: white;
+  font-family: "Titillium Web";
+}
+
+.header-middle-panel {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.Header img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(158, 158, 158, 0.5);
+  box-shadow: 8px 10px 15px -6px rgba(158, 158, 158, 1);
+  background: white;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.weather-row {
+  border: 1px solid rgba(158, 158, 158, 0.5);
+  box-shadow: 8px 10px 15px -6px rgba(158, 158, 158, 1);
+  background: white;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+.hour {
+  font-family: "Titillium Web";
+  font-weight: 700;
+  font-size: 20px;
+}
+img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.real-feel {
+  font-family: "Titillium Web";
+  color: rgb(56, 56, 56);
+  font-size: 13px;
+}
+.header-info {
+  font-family: "Titillium Web";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.additional-info {
+  font-family: "Titillium Web";
+  color: rgb(56, 56, 56);
+  font-size: 10px;
+}
+
+.Footer p {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.2rem;
 }
