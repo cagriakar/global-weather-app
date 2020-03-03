@@ -8,7 +8,7 @@ import { getURL } from "../calls/getURL";
 
 function Header() {
   const [url, setUrl] = useContext(URLContext);
-  const [location, setLocation] = useState("Kıyıköy, Kırklareli");
+  const [location, setLocation] = useState("Aliağa, İzmir");
 
   function handleClick() {
     getURL().then(response => setUrl(response));

@@ -4,7 +4,7 @@ const URLContext = createContext();
 
 function URLProvider(props) {
   const [url, setUrl] = useState(
-    "https://www.accuweather.com/tr/tr/kiyikoy/318696/hourly-weather-forecast/318696"
+    "https://www.accuweather.com/tr/tr/aliaga/318256/hourly-weather-forecast/318256"
   );
 
   return (
