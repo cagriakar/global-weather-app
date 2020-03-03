@@ -4,7 +4,11 @@ const jsonframe = require("jsonframe-cheerio");
 
 function getCurrentPosition(options = { enableHighAccuracy: true }) {
   return new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(resolve, reject, options);
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(resolve, reject, options);
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
   });
 }
 
