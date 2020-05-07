@@ -24,6 +24,8 @@ function WeatherRow({ data }) {
 						{data.description}
 					</Col>
 					<Col xs={2} sm={3} className="header-info px-0 py-2">
+						{'Yağış '}
+						<br />
 						{data.precip}
 					</Col>
 				</Row>
@@ -70,7 +72,7 @@ function WeatherRow({ data }) {
 					</Col>
 					<Col xs className="px-0">
 						{window.screen.width < 768 ? (
-							<Col className="additional-info px-1">{data.cloud}</Col>
+							<Col className="additional-info px-1">{data.rain}</Col>
 						) : (
 							<>
 								<Col className="additional-info px-1">
@@ -82,7 +84,7 @@ function WeatherRow({ data }) {
 					</Col>
 					<Col xs className="px-0">
 						{window.screen.width < 768 ? (
-							<Col className="additional-info px-1">{data.rain}</Col>
+							<Col className="additional-info px-1">{data.snow}</Col>
 						) : (
 							<>
 								<Col className="additional-info px-1">{data.rain.substr(0, 6)}</Col>
